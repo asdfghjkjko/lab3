@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/ed_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -19,13 +19,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="輸入姓名已開始遊戲"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintStart_toStartOf="@+id/ed_name"
+        app:layout_constraintTop_toBottomOf="@+id/ed_name" />
 
 
     <RadioGroup
@@ -34,11 +34,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintStart_toStartOf="@+id/tv_text"
+        app:layout_constraintTop_toBottomOf="@+id/tv_text">
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/btn_scissor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -46,14 +46,14 @@
             android:text="剪刀" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/btn_stone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="石頭" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/btn_paper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
