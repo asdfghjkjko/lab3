@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 tv_text.setText("請輸入玩家姓名");
             } else {
                 tv_name.setText(String.format("名字\n%s", ed_name.getText().toString()));
+
                 if (btn_scissor.isChecked()) {
                     tv_mmora.setText("我方出拳\n剪刀");
                 } else if (btn_stone.isChecked()) {
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (computer_random == 0) {
                     tv_cmora.setText("電腦出拳\n剪刀");
-                } if (computer_random == 1) {
+                } else if (computer_random == 1) {
                     tv_cmora.setText("電腦出拳\n石頭");
                 } else {
                     tv_cmora.setText("電腦出拳\n布");
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 } else if ((btn_scissor.isChecked() && computer_random == 1) ||
                         (btn_stone.isChecked() && computer_random == 2) ||
                         (btn_paper.isChecked() && computer_random == 0)) {
-                    tv_winner.setText("勝利者\n電腦" + ed_name.getText().toString());
+                    tv_winner.setText("勝利者\n電腦" );
                     tv_text.setText("可惜，電腦獲勝了!");
                 } else {
                     tv_winner.setText("勝利者\n平手");
